@@ -6,8 +6,8 @@ import { HiOutlineDotsVertical } from "react-icons/hi";
 
 const Appbar = () => {
     return (
-        <div className='flex justify-between items-center py-3 px-4 bg-[#0f0f0f] text-white'>
-            <img src="./logo.png" className='w-28 h-7' alt="" />
+        <div className='flex justify-between items-center py-3 px-4 bg-[#0f0f0f] text-white w-[94vw] absolute top-0 left-[5%]'>
+            <img src="./logo.png" className='w-28 h-7 cursor-pointer' alt="" />
             <div className='flex h-10 w-[44%] gap-12 relative'>
                 <input type="text" placeholder='Search' className='w-[90%] h-11 border-2 border-[#242323] bg-[#0f0f0f] rounded-l-full p-2 pl-4' />
                 <button className='bg-[#242323] w-15 h-11 absolute left-[84%] p-1 px-3 rounded-r-full mb-1'><FiSearch className='h-8 w-6 ml-1' /></button>

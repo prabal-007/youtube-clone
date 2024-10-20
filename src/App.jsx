@@ -1,21 +1,23 @@
-import Appbar from "./componrnts/Appbar"
-import Navbar from "./componrnts/Navbar"
-import SearchTabs from "./componrnts/SearchTabs"
-import { VideoGrid } from "./componrnts/VideoGrid"
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import Landing from "./componrnts/Landing"
+import Player from "./componrnts/Player"
 
 
 function App() {
+  const route = createBrowserRouter([
+    {
+      path: "/",
+      element: <Landing />
+    }, 
+    {
+      path: "/player",
+      element: <Player />
+    }
+  ])
 
   return (
     <>
-    <div className="bg-[#0f0f0f] text-white flex">
-      <Navbar />
-      <div>
-        <Appbar />
-        <SearchTabs className="md:hidden" />
-      <VideoGrid />
-      </div>
-    </div>
+    <RouterProvider router={route} />
     </>
   )
 }

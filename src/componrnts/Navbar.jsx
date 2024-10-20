@@ -10,12 +10,12 @@ import { FaClockRotateLeft } from "react-icons/fa6";
 const Navbar = () => {
   return (
     <div className='w-20 grid grid-rows-12 justify-center p-6'>
-        <RxHamburgerMenu className='h-6 w-6'/>
-        <MdHome className='h-6 w-6'/>
-        <SiYoutubeshorts className='h-6 w-6'/>
-        <MdOutlineSubscriptions className='h-6 w-6'/>
-        <CgProfile className='h-6 w-6'/>
-        <FaClockRotateLeft className='h-6 w-6'/>
+        <RxHamburgerMenu className='h-6 w-6 cursor-pointer'/>
+        <MdHome className='h-6 w-6 cursor-pointer'/>
+        <SiYoutubeshorts className='h-6 w-6 cursor-pointer'/>
+        <MdOutlineSubscriptions className='h-6 w-6 cursor-pointer'/>
+        <CgProfile className='h-6 w-6 cursor-pointer'/>
+        <FaClockRotateLeft className='h-6 w-6 cursor-pointer'/>
     </div>
   )
 }
